@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 
 // --- Start server ---
 app.listen(PORT, () => {
-  log.server(`Szerver elindult a ${PORT}-es porton`);
+  log.info(`[SERVER] Server running on port ${PORT}!`);
 });
 
 module.exports = app;
