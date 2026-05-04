@@ -15,7 +15,7 @@ const URI = process.env.URI;
 app.use(express.json());
 app.use(
   cors({
-    origin: process.env.ORIGIN || '*',
+    origin: process.env.ORIGIN,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   }),
